@@ -1,0 +1,8 @@
+TODO EL VIDEO
+ffmpeg -i MOV_1227.mp4  -vf "select=not(mod(n\,8))" -vsync vfr X:\GIS\Proyectos\PVA Granadilla\subproyectos\Transectos\SUBPROYECTOS\SFM\SUBPROYECTOS\oficina\ofic%06d_12fps.jpg
+ffmpeg -i "X:\GIS\Proyectos\PVA Granadilla\subproyectos\Transectos\SUBPROYECTOS\SFM\SUBPROYECTOS\estructura-camara\MOV_1431.mp4"   -vf "select=not(mod(n\,8))"   -vsync vfr "X:\GIS\Proyectos\PVA Granadilla\subproyectos\Transectos\SUBPROYECTOS\SFM\SUBPROYECTOS\estructura-camara\stru%06d_3fps.png"
+
+A PARTIR DE UN TIEMPO (en segundos ==> min*60 + seg)
+ffmpeg -i "X:\GIS\Proyectos\PVA Granadilla\subproyectos\Transectos\SUBPROYECTOS\SFM\SUBPROYECTOS\estructura-camara\MOV_1431.mp4"   -vf "select=not(mod(n\,8))" -ss 510  -vsync vfr "X:\GIS\Proyectos\PVA Granadilla\subproyectos\Transectos\SUBPROYECTOS\SFM\SUBPROYECTOS\estructura-camara\stru%06d_3fps.png"
+
+
